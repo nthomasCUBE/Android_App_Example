@@ -18,9 +18,7 @@ class MainActivity : AppCompatActivity() {
             var prename = findViewById<AutoCompleteTextView>(R.id.tx1);
             var lastname = findViewById<AutoCompleteTextView>(R.id.tx2);
 
-            Toast.makeText(this,prename.editableText.toString(),Toast.LENGTH_SHORT).show();
-            Toast.makeText(this,lastname.editableText.toString(),Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(this,prename.editableText.toString().plus(" ").plus(lastname.editableText.toString()),Toast.LENGTH_SHORT).show()
         }
     }
 }
