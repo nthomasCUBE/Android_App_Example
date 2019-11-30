@@ -10,4 +10,4 @@ and then prints it when pressing a button
 # External tutorials
 
 excellent external tutorial about SQLite in Kotlin Android
-![alt text](https://www.javatpoint.com/kotlin-android-sqlite-tutorial)
+[[https://www.javatpoint.com/kotlin-android-sqlite-tutorial]]
