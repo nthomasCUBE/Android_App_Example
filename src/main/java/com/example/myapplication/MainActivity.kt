@@ -15,6 +15,7 @@ import android.database.sqlite.SQLiteException
 import android.database.sqlite.SQLiteOpenHelper
 
 import android.provider.BaseColumns
+import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,13 +40,20 @@ class MainActivity : AppCompatActivity() {
 
             var prename = findViewById<AutoCompleteTextView>(R.id.tx1);
             var lastname = findViewById<AutoCompleteTextView>(R.id.tx2);
+            var editText = findViewById<EditText>(R.id.editText);
+
             Toast.makeText(this,prename.editableText.toString().plus(" ").plus(lastname.editableText.toString()),Toast.LENGTH_SHORT).show()
 
             val databaseHandler: DatabaseHandler= DatabaseHandler(this)
             val emp:List<PersonModelClass> = databaseHandler.viewPerson()
+
+            val x=StringBuilder()
             for(e in emp) {
-                Toast.makeText(this,"saved:".plus(e.prename.plus(" ").plus(e.lastname)),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this,"saved:".plus(e.prename.plus(" ").plus(e.lastname)),Toast.LENGTH_SHORT).show();
+                x.append(e.prename.toString().plus(" ").plus(e.lastname.toString()))
+                x.append("\n")
             }
+            editText.setText(x.toString());
             databaseHandler.addPerson(PersonModelClass(emp.size+1,prename.editableText.toString(),lastname.editableText.toString()));
             databaseHandler.close();
 
