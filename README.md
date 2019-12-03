@@ -3,7 +3,7 @@
 ## Description
 first example for an android app 
 
-![alt text](https://github.com/nthomasCUBE/Android_App_Example/blob/master/app_template.png)
+![alt text](https://github.com/nthomasCUBE/Android_App_Example/blob/master/Figure1b.png)
 
 Example, that allows to insert the prename or the lastname
 and then loops over all names that exist in the SQLite Database.
