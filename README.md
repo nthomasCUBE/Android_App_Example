@@ -1,7 +1,7 @@
 # Android_App_Example
 
 ## Description
-First example for an android app allows to store names and to search for them
+Example for an android app allows to store names and to search for them
 
 ![alt text](https://github.com/nthomasCUBE/Android_App_Example/blob/master/Figure1b.png)
 
