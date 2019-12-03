@@ -11,4 +11,4 @@ and then loops over all names that exist in the SQLite Database.
 ## External tutorials
 
 ## excellent external tutorial about SQLite in Kotlin Android
-[https://www.javatpoint.com/kotlin-android-sqlite-tutorial]
+https://www.javatpoint.com/kotlin-android-sqlite-tutorial
